@@ -1,5 +1,5 @@
 {
-  "name": "Miles to km Converter",
+  "name": "Miles to km",
   "short_name": "Miles to km",
   "description": "Convert miles to km and MPG to L/100km",
   "start_url": "./",
