@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Free online unit converter for miles to km and MPG to L/100km. Fast, accurate, and mobile-friendly conversion tool.">
+    <meta name="keywords" content="miles to km, kilometers converter, MPG to L/100km, fuel economy converter, unit converter, distance converter, miles converter, km converter">
+    <meta name="author" content="Miles to km Converter">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="theme-color" content="#4a5568">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Miles to km Converter - Free Unit Converter">
+    <meta property="og:description" content="Convert miles to km and MPG to L/100km instantly. Free, fast, and accurate unit conversion tool.">
+    <meta property="og:image" content="app.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Miles to km Converter - Free Unit Converter">
+    <meta name="twitter:description" content="Convert miles to km and MPG to L/100km instantly. Free, fast, and accurate unit conversion tool.">
+    <meta name="twitter:image" content="app.png">
+    
+    <title>Miles to km Converter - Free Unit Converter | MPG to L/100km</title>
+    <link rel="icon" type="image/png" href="app.png">
+    <link rel="apple-touch-icon" href="app.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter-card">
+            <div class="converter-body">
+                <div class="input-group">
+                    <label for="miles">Miles</label>
+                    <input type="number" id="miles" placeholder="0" step="0.01" inputmode="decimal">
+                </div>
+                <div class="arrow">↔</div>
+                <div class="input-group">
+                    <label for="km">Kilometers</label>
+                    <input type="number" id="km" placeholder="0" step="0.01" inputmode="decimal">
+                </div>
+            </div>
+        </div>
+
+        <div class="converter-card">
+            <div class="converter-body">
+                <div class="input-group">
+                    <label for="mpg">MPG</label>
+                    <input type="number" id="mpg" placeholder="0" step="0.01" inputmode="decimal">
+                </div>
+                <div class="arrow">↔</div>
+                <div class="input-group">
+                    <label for="l100km">L/100km</label>
+                    <input type="number" id="l100km" placeholder="0" step="0.01" inputmode="decimal">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.log('Service Worker registration failed'));
+            });
+        }
+    </script>
+</body>
+</html>
+
