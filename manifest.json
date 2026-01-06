@@ -1,6 +1,6 @@
 {
   "name": "Miles to km Converter",
-  "short_name": "Unit Converter",
+  "short_name": "Miles to km",
   "description": "Convert miles to km and MPG to L/100km",
   "start_url": "./",
   "display": "standalone",
